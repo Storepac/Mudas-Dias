@@ -1408,6 +1408,33 @@ figure.custom-blockquote {
   max-width: 68px;
 }
 
+/* Button inicio pagina */
+.btn-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  border-radius: 50%;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #45a049;
+  border: solid 1px #fff;
+  text-decoration: none;
+}
+.btn-top::after {
+  content: "↑";
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  transition: margin-top 500ms;
+}
+.btn-top:hover::after {
+  margin-top:-8px;
+}
+/* FIM Button inicio pagina */
+
 .footer ul li {
   margin: 5px 0px;
 }
