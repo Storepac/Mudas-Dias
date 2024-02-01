@@ -1,0 +1,22 @@
+// 
+// font.scss
+// 
+
+@font-face {
+    font-family: "WeblySleek UI";
+    src: url("../fonts/ws-ui.eot");
+    src: local('WeblySleek UI Regular'), url("../fonts/ws-ui.woff") format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "WeblySleek UI";
+    src: url("../fonts/ws-ui-semibold.eot");
+    src: local('WeblySleek UI Bold'), url("../fonts/ws-ui-semibold.woff") format("woff");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "WeblySleek UI";
+    src: url("../fonts/ws-ui-light.eot");
+    src: local('WeblySleek UI Light'), url("../fonts/ws-ui-light.woff") format("woff");
+    font-weight: 100;
+}

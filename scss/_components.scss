@@ -1,0 +1,139 @@
+// 
+// Components
+// 
+
+.btn {
+    padding: 11px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $font-size-sm;
+
+    &.btn-sm {
+        padding: 6px 12px;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    @each $color,
+    $value in $theme-colors {
+        &.btn-#{$color} {
+            background-color: #{$value};
+            border: 1px solid #{$value};
+            color: $white;
+            &:hover,
+            &.active {
+                background-color: lighten($value, 7%);
+                border: 1px solid lighten($value, 7%);
+            }
+        }
+        &.btn-outline-#{$color} {
+            border: 1px solid #{$value} !important;
+            color: #{$value} !important;
+        }
+    }
+    &.btn-light,
+    &.btn-white {
+        background-color: $white;
+        border: 1px solid $white;
+        border-bottom: 3px solid darken($white, 12%) !important;
+        color: $primary !important;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: darken($white, 7%) !important;
+            border-color: darken($white, 7%) !important;
+            border-bottom: 3px solid darken($white, 15%) !important;
+        }
+    }
+    &.btn-outline-light,
+    &.btn-outline-white {
+        border: 1px solid $white !important;
+        color: $white !important;
+        text-transform: uppercase;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: $white;
+            color: $dark !important;
+        }
+    }
+}
+
+// video btn
+.video-btn {
+    color: $white;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    outline: none !important;
+  }
+
+// Modal-box
+.modal {
+    .video-modal {
+        border: 0;
+        background-color: transparent;
+        .video-box {
+            position: relative;
+        }
+        .btn-close {
+            width: 26px;
+            height: 26px;
+            background-color: rgba($white, 0.5);
+            border-radius: 6px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            opacity: 0;
+            z-index: 3;
+            video {
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        &:hover {
+            .btn-close {
+                opacity: 0.5;
+            }
+        }
+    }
+    .btn-close {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+
+// Dropdown 
+.dropdown-menu {
+    box-shadow: none;
+    padding: 4px 0;
+    border-radius: 4px !important;
+    animation: dropdownOpen 0.3s ease-out;
+    border: 0;
+}
+
+@keyframes dropdownOpen {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// blockquote
+figure.custom-blockquote {
+    padding: 10px 20px;
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 32px;
+    font-style: italic;
+}

@@ -1,0 +1,166 @@
+// 
+// Helper
+// 
+
+// coloe
+@each $color,
+$value in $theme-colors {
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+    .text-#{$color} {
+        color: $value !important;
+    }
+}
+
+.section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    position: relative;
+}
+
+.section-sm {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+    position: relative;
+}
+
+.section-light {
+    background-color: $light;
+    border-bottom: 1px solid darken($light, 5%);
+    border-top: 1px solid darken($light, 5%);
+}
+
+.page-hero {
+    padding: 185px 0px 170px 0px;
+}
+
+.title-border {
+    display: inline-block;
+  border: 0;
+  width: 35px;
+  margin: 12px 0px 25px;
+  padding: 0;
+  height: 0;
+  border-top: 2px solid $primary;
+}
+
+.sub-title {
+    line-height: 30px;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid $gray-200;
+}
+
+.title-hr {
+    height: 4px;
+      width: 60px;
+      margin: 25px auto 20px;
+      background: $body-text;
+      border-radius: 4px;
+  }
+
+.bg-overlay {
+    position: absolute;
+    background-color: rgba($black, 0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-gradient-overlay {
+    position: absolute;
+    background: linear-gradient(#614385, #516395);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 0px;
+  }
+  .sub-title {
+    color: $light-gray;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+.f-12{
+    font-size: 12px;
+}
+
+.f-13{
+    font-size: 13px;
+}
+
+.f-14{
+    font-size: 14px;
+}
+
+.f-16{
+    font-size: 16px;
+}
+
+.f-17{
+    font-size: 17px;
+}
+
+.f-18{
+    font-size: 18px;
+}
+
+.f-36{
+    font-size: 36px;
+}
+
+
+.text-light-custom {
+    color: darken($gray-400, 15%);
+}
+
+.modal-backdrop {
+    background-color: $black;
+}
+
+address {
+    color: $light-gray;
+}
+
+
+
+/**BACK TO TOP**/
+
+.back-to-top-btn {
+    position: fixed;
+    padding: 0px 5px !important;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    i {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+
+
+#mkLightboxContainer {
+    z-index: 999;
+}

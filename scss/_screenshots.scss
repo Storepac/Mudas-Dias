@@ -1,0 +1,63 @@
+// 
+// screenshots.scss
+// 
+
+
+.item-box {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background-color: $gray-100;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 rgba($black, 0.1);
+  padding: 10px; // border-radius: 8px;
+  &:hover {
+      .item-mask {
+          opacity: 1;
+          visibility: visible;
+          cursor: pointer;
+      }
+      .item-container {
+          transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+          width: 100%;
+      }
+  }
+}
+
+.item-mask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#mkLightboxContainer {
+  #closeIconContainer {
+      width: 15px;
+      height: 15px;
+      svg {
+          transition: all 0.3s ease-in-out;
+          transform: rotate(0deg);
+      }
+      &:hover {
+          transform: none;
+          svg {
+              transform: rotate(90deg);
+          }
+      }
+  }
+  #prevContainer:hover,
+  #nextContainer:hover {
+      background: transparent;
+  }
+  #prev,
+  #next {
+      width: 25px;
+      height: 25px;
+  }
+}

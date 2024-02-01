@@ -1,0 +1,135 @@
+// 
+// hero.scss
+// 
+
+
+.hero {
+  padding: 185px 0px 170px 0px;
+}
+
+// coming-soon-slideshow
+.count-down-content {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  overflow-y: auto;
+}
+
+.countdown-slider {
+  .carousel-item {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+}
+
+// animate hero
+.large-header {
+  background-image: url('../images/bg.jpg');
+}
+
+.home-main {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+// index-overlay-img
+.bg-one {
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.hero-custom {
+  padding: 220px 0px 140px 0px;
+}
+
+// fullscreen img
+.bg-two {
+  background: url("../images/bg-2.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+// hero-video
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Intro Form */
+
+.intro-form {
+  background-color: $white;
+  padding: 30px;
+  border-radius: 5px;
+  border: 3px solid $gray-200;
+  h3 {
+      color: $gray-500;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      margin-top: 0px;
+  }
+  input {
+      border: 2px solid $gray-200;
+      &.form-control {
+          &:hover {
+              border-color: $gray-200;
+          }
+      }
+  }
+}
+
+// slider
+.carousel-indicators {
+  bottom: -150px;
+  [data-bs-target] {
+      width: 11px !important;
+      height: 11px !important;
+      border-radius: 50%;
+      margin: 0 6px;
+      &.active {
+          background-color: $primary;
+      }
+  }
+}
+
+// index-subscribe
+.form-inline {
+  .form-control {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+  }
+  .input-box {
+      min-width: 380px;
+      height: 50px !important;
+      border-color: $white !important;
+  }
+  .btn-subscribe {
+      height: 50px;
+      padding: 10px 30px;
+  }
+}
+
+.bg-img {
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  position: relative;
+}
