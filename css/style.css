@@ -58,6 +58,13 @@ html {
   scroll-padding-top: 59px; /* height of sticky header */
 }
 
+p{
+  color: #666666;
+  font-size: 1.2rem;
+}
+#sobre p {
+  font-size: 1.2rem;
+}
 .row > * {
   position: relative;
 }
@@ -792,11 +799,9 @@ figure.custom-blockquote {
   width: 100%;
   height: auto;
 }
-.navbar.navbar-light .logo {
-  color: #333333 !important;
-}
+
 .logo {
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 .logo img{
@@ -819,17 +824,6 @@ figure.custom-blockquote {
 }
 .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link:hover, .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link.active {
   color: #333333;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 22px;
-  color: #fff !important;
-  letter-spacing: 1px;
-}
-
-.nav-sticky .logo {
-  color: #333333 !important;
 }
 
 /* -- tagline -- */
@@ -970,9 +964,6 @@ figure.custom-blockquote {
   }
   .navbar-btn {
     margin: 0px;
-  }
-  .logo {
-    color: #333333 !important;
   }
 }
 @media (min-width: 768px) {
