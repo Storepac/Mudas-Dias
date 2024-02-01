@@ -1,10 +1,3 @@
-/* Theme Name: Lugada - Responsive bootsrap 4 Landing Page Template
-   Author: Techzaa
-   Version: 1.0.0
-   Created: May 2018
-   File Description: Main Js file of the template
-*/
-
 
 // Sticky Navbar
 
@@ -132,7 +125,4 @@ function changeText() {
 }
 
 changeText();
-
-
-
 
