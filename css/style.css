@@ -63,7 +63,7 @@ p{
   font-size: 1.2rem;
 }
 #sobre p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .row > * {
   position: relative;
@@ -1112,8 +1112,8 @@ figure.custom-blockquote {
   padding: 90px 0px 50px 30px;
 }
 .feature-detail .features-txt {
-  color: #aaaaaa;
-  font-size: 16px;
+  color: #838383;
+  font-size: 1.2rem;
   line-height: 30px;
   margin-top: 30px;
 }
